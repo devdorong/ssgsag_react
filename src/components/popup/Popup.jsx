@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 //css
 import style from "./Popup.module.css";
 
 function Popup() {
+  const [visible, setVisible] = useState(true);
+
+  if (!visible) return null;
   return (
     <>
       <div className={style.popup}>
@@ -26,7 +29,12 @@ function Popup() {
           <br />
           <p>📬 문의: dev.dorong@gmail.com</p>
           <p>💻 GitHub: github.com/devdorong</p>
-          <button className={style.popup_close}>X</button>
+          <button
+            className={style.popup_close}
+            onClick={() => setVisible(false)}
+          >
+            X
+          </button>
         </div>
       </div>
     </>
@@ -34,3 +42,11 @@ function Popup() {
 }
 
 export default Popup;
+window.addEventListener("DOMContentLoaded", () => {
+  const closeBt = document.querySelector(".popup_close");
+  const popup = document.querySelector(".popup");
+
+  closeBt.addEventListener("click", () => {
+    popup.style.display = "none";
+  });
+});
