@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* 선택사항 탭키 누를시 포커스에 검은테두리 보기싫으면 적용 */
+  outline-style: none;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.wrap {
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+}

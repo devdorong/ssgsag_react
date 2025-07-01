@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>슥삭</title>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <script src="js/header.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/banner.css" />
+    <script src="js/banner.js"></script>
+    <link rel="stylesheet" href="css/banner_under.css" />
+    <script src="js/banner_under.js"></script>
+    <link rel="stylesheet" href="css/cock.css" />
+    <script src="js/cock.js"></script>
+    <link rel="stylesheet" href="css/recently.css" />
+    <script src="js/recently.js"></script>
+    <link rel="stylesheet" href="css/now.css" />
+    <script src="js/now.js"></script>
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/footer.css" />
+    <script src="js/footer.js"></script>
+  </head>
+
+  <body>
+    <!-- 저작권 안내 -->
+    <link rel="stylesheet" href="css/popup.css" />
+    <script src="js/popup.js"></script>
+    <div class="popup">
+      <div class="popup_content">
+        <p class="popup_text"><b>⚠️ 안내드립니다</b></p>
+        <br />
+        <p>이 사이트는 🧑‍💻 개인 학습 목적으로 제작된 클론코딩 프로젝트입니다.</p>
+        <p>
+          실제 서비스가 아닌, 프론트엔드 개발 연습을 위해 구현된 모작입니다.
+        </p>
+        <br />
+        <p>💡 클론 과정에서 디자인과 기능을 참고하였으며,</p>
+        <p>상업적 목적 없이 포트폴리오 용도로만 활용됩니다.</p>
+        <br />
+        <p>🛑 원작 사이트의 저작권은 각 소유자에게 있으며,</p>
+        <p>이 프로젝트는 그와 무관함을 명확히 밝힙니다.</p>
+        <br />
+        <p>📬 문의: dev.dorong@gmail.com</p>
+        <p>💻 GitHub: github.com/devdorong</p>
+        <button class="popup_close">X</button>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <header class="header">
+        <div class="layout">
+          <div class="header_top">
+            <div class="header_left">
+              <a href="#" class="header_left_logo"
+                ><img src="images/img_logo_ssgsag.svg" alt="슥삭 메인로고"
+              /></a>
+              <div class="header_left_menu">
+                <ul>
+                  <li><a href="#">내 일정</a></li>
+                  <li>
+                    <a href="#">추천공고<span></span></a>
+                  </li>
+                  <li><a href="#">슈퍼인턴</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="header_right">
+              <div class="header_right_link">
+                <ul>
+                  <li>
+                    <img src="images/ic_upload.svg" alt="" />
+                    <a href="#">공고등록</a>
+                  </li>
+                  <li>
+                    <img src="images/ic_advertise.svg" alt="" />
+                    <a href="#">광고문의</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header_right_login">로그인</div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="mobile_header">
+        <a href="#"><img src="images/img_logo_ssgsag.svg" alt="#" class="mb_logo"/></a>
+        <a href="#"><img src="images/ic_menu.svg" alt="#" /></a>
+      </div>
+      <main class="main">
+        <section class="banner">
+          <div class="layout">
+            <div class="banner_wrap">
+              <div class="swiper sw_banner">
+                <div class="swiper-wrapper">
+                  <!-- Api 연동 -->
+                </div>
+              </div>
+              <div class="banner_pagnation"></div>
+
+              <button class="banner_slide_prev">
+                <img src="images/slider_arrow.svg" alt="" />
+              </button>
+              <button class="banner_slide_next">
+                <img src="images/slider_arrow.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="banner_under">
+          <ul>
+            <li>
+              <button class="banner_bt">
+                <div class="bt_image">
+                  <img src="images/ic_activity.png" alt="#" />
+                </div>
+                <div class="bt_text">대외활동</div>
+                <span class="bt_hot">HOT</span>
+              </button>
+            </li>
+            <li>
+              <button class="banner_bt">
+                <div class="bt_image">
+                  <img src="images/ic_contest.png" alt="#" />
+                </div>
+                <div class="bt_text">공모전</div>
+                <!-- <span>HOT</span> -->
+              </button>
+            </li>
+            <li>
+              <button class="banner_bt">
+                <div class="bt_image">
+                  <img src="images/ic_internship.png" alt="#" />
+                </div>
+                <div class="bt_text">인턴쉽</div>
+                <!-- <span>HOT</span> -->
+              </button>
+            </li>
+            <li>
+              <button class="banner_bt">
+                <div class="bt_image">
+                  <img src="images/ic_education.png" alt="#" />
+                </div>
+                <div class="bt_text">교육·︎강연</div>
+                <!-- <span>HOT</span> -->
+              </button>
+            </li>
+          </ul>
+        </section>
+        <section class="cock">
+          <div class="cock_wrap">
+            <p class="cock_top">슥삭이<span> 콕 </span>집은 공고</p>
+            <div class="cock_bottom">
+              <ul class="cock_list">
+                <!-- Api 연동 -->
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="recently">
+          <div class="recently_wrap">
+            <p class="recently_top">
+              <span>요즘 </span>핫한 공고만 찾고 있다면?
+            </p>
+            <div class="recently_bottom">
+              <ul class="recently_list">
+                <!-- Api 연동 -->
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="now">
+          <div class="now_wrap">
+            <p class="now_top"><span>방금</span> 게시된 공고만 찾고 있다면?</p>
+            <div class="now_bottom">
+              <ul class="now_list">
+                
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="app">
+          <div class="app_wrap">
+            <div class="app_item">
+              <div class="app_image">
+                <img src="images/img_install_guide.png" alt="#" />
+              </div>
+              <div class="app_text">
+                <div class="app_text_top">
+                  <div class="app_top_main">슥삭 앱 설치 안내</div>
+                  <div class="app_top_sub">
+                    슥삭 앱에서 더 편리하게 공고를 추천받고 일정을 관리할 수
+                    있어요
+                  </div>
+                </div>
+                <div class="app_text_bottom">
+                  <div class="app_bottom_apple">
+                    <a href="#">
+                      <div class="apple_image">
+                        <img src="images/ic_app_store.png" alt="#" />
+                      </div>
+                      <div class="apple_text">App Store에서 보기</div>
+                    </a>
+                  </div>
+                  <div class="app_bottom_play">
+                    <a href="#">
+                      <div class="play_image">
+                        <img src="images/ic_google_play.png" alt="#" />
+                      </div>
+                      <div class="play_text">Google Play에서 보기</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer_wrap">
+          <div class="footer_top">
+            <div class="footer_top_left">
+              <div class="fl_top">고객센터</div>
+              <div class="fl_bottom">
+                <div class="flb_top">전화 010-1234-5678</div>
+                <div class="flb_bottom">
+                  <div class="flbb_t">
+                    운영시간<span> 10:10-19:00 </span>(토∙일, 공휴일 휴무)
+                  </div>
+                  <div class="flbb_b">점심시간<span> 12:30-14:00</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="footer_top_right">
+              <div class="ftr_left">
+                <div class="ftrl_top">회사</div>
+                <div class="ftrl_bottom">
+                  <ul>
+                    <li>
+                      <a href="#">회사 소개</a>
+                    </li>
+                    <li>
+                      <a href="#">서비스 소개</a>
+                    </li>
+                    <li>
+                      <a href="#">채용</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="ftr_right">
+                <div class="ftrr_top">비즈니스</div>
+                <div class="ftrr_bottom">
+                  <ul>
+                    <li><a href="#">광고 문의</a></li>
+                    <li><a href="#">공고 등록</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer_middle"></div>
+          <div class="footer_bottom">
+            <div class="fb_left">
+              <div class="fbl_top">
+                <p>
+                  <a href="#"><b>(주)이십사점오</b></a>
+                </p>
+                <p>
+                  <a href="#"><b>대표이사</b> 김신우 </a
+                  ><span class="bar"></span
+                  ><a href="#"> <b>사업자등록번호</b> 123-45-67890</a>
+                </p>
+                <p>
+                  <a href="#"
+                    ><b>직업정보제공사업 신고번호</b> J1700020250005</a
+                  >
+                </p>
+                <p>
+                  <a href="#"><b>주소</b> 대전 중구 대종로 708, 2층 </a
+                  ><span class="bar"></span
+                  ><a href="#"> 서울시 마포구 마포대로 122, 15층</a>
+                </p>
+                <p>
+                  <a href="#"><b>광고 문의</b> sales@ssgsag.kr </a
+                  ><span class="bar"></span
+                  ><a href="#"> <b>제휴 문의</b> ssgsag.univ@gmail.com</a>
+                </p>
+              </div>
+              <div class="fbl_bottom">
+                <a href="#">이용약관</a>
+                <a href="#"><strong>개인정보 처리방침</strong></a>
+              </div>
+            </div>
+            <div class="fb_right">
+              <a href="#"><img src="images/ic_instagram.svg" alt="#" /></a>
+              <a href="#"><img src="images/ic_naver_blog.svg" alt="#" /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
